@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+     <!-- Event Banner -->
+     <section class="container">
+
+        
+        <img src="sunimage.jpg" alt="Event Banner" class="banner">
+        
+        <h1 style="font-family: 'Burtons'; font-size: 60px;">Moon & Planets Observation</h1>
+        
+        <h2><span style="color: #ff6600;">Join us on January 05th at Tambaram, Chennai for an unforgettable Moon & Planets Observation event.</span></h2>
+        <h2><span style="color: #ff6600;">Experience Our Solar System with powerful telescopes</span></h2>
+
+        <h3><u>Inclusions:</u></h3>
+        <p>Moon, Jupiter, Saturn, Venus, Mars</p>
+
+        <p><u>Package Details:</u></p>
+        
+        <p>Regular Price Per Person : ₹500/-</p>
+	    <p>Kids under 10 years old: Free Admission</p>
+
+        <p><u>Disclaimer:</u></p>
+        <p>The occurrence of the event relies on weather conditions.</p>
+        <p>If the weather condition is not good, we will reschedule the event.</p>
+        <p>Date: <span style="color: #ff6600;">05th January 2025, 7:00 PM - 09:00 PM</span></p>
+        <p>Location: <a href="https://maps.app.goo.gl/XZ4qBXX23W7HiaDW8" target="_blank" style="color: #ff6600;">Dustlit - Moon & Planets Observation - Tambaram</a></p>
+		 </section>
+		
+		<section class="container">
+		
+		<h2><strong>🌟 Event Itinerary: Unveil the Secrets of the Moon & Planets 🌟</strong></h2>
+
+        <p><strong>🌌 Welcome & Introduction</strong></p>
+<p style="text-align: left;">Introduction about Our Solar System.</p>
+
+<p style="text-align: left;"><strong>✨ Venus Observation</strong><br>
+Observe Venus in the evening sky and discuss its phases and brightness, which make it the "Evening Star."</p>
+
+<p style="text-align: left;"><strong>🔭 Jupiter Viewing</strong><br>
+View Jupiter through telescopes, focusing on its bands, Great Red Spot, and its four largest moons.</p>
+
+<p style="text-align: left;"><strong>🪐 Saturn Observation</strong><br>
+Observe Saturn's stunning ring system and learn about its moons and unique place in the solar system.</p>
+
+<p style="text-align: left;"><strong>🔴 Mars Viewing</strong><br>
+Spot Mars and its reddish appearance, discussing its surface features, like polar ice caps and dust storms.</p>
+
+<p style="text-align: left;"><strong>🌙 Lunar Exploration</strong><br>
+View the Moon’s craters, mountains, and seas, and engage in fun activities like identifying features.</p>
+
+<p style="text-align: left;"><strong>📖 Astronomy Talk</strong><br>
+Listen to a short talk on the significance of planetary alignments and their impact on astronomy.</p>
+
+<p style="text-align: left;"><strong>💫 Closing Remarks & Q&A Session</strong><br>
+End on a high note! Get your questions answered, share your thoughts, and bid farewell with memories of a celestial experience to cherish.</p>
+
+    </section>
+
+    <div class="container">
+        
+        <form id="registrationForm">
+
+            <img src="logo.png" alt="Event Logo" class="logo">
+            <h1>Event Registration</h1>
+        
+            <h1 id="discount" style="color: red; font-weight: bold;"></h1>
+        
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+        
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required maxlength="10" pattern="\d{10}" placeholder="Enter 10-digit phone number">
+        
+            <label for="attendees">Number of Attendees:</label>
+            <input type="number" id="attendees" name="attendees" required min="1" placeholder="Enter number of attendees" oninput="calculateAmount()">
+            
+            <label>Select Event Date:</label>
+    <div class="radio-group">
+        
+        <label>
+            <input type="radio" name="event_date" value="05th January 2025">05th January 2025 (Sunday)
+        </label>
+
+            <p id="amount">Total Amount: ₹0</p>
+        
+            <div class="payment-section">
+                <p>Payment Details:</p>
+                <div>
+                    <p>UPI Number: <span id="upiNumber1">7416930597</span></p>
+                    <button type="button" id="copyButton1">Copy UPI</button>
+                </div>
+                <div><p>-</p></div>
+                <div><p>or</p></div>
+                <div><p>-</p></div>
+                <div>
+                    <p>UPI Number: <span id="upiNumber2">9585866980</span></p>
+                    <button type="button" id="copyButton2">Copy UPI</button>
+                </div>
+            </div>
+            
+            </div>
+        
+            <button type="submit" id="submitButton">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
